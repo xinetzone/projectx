@@ -14,18 +14,18 @@ from pathlib import Path
 
 ROOT = Path('__file__').resolve().parents[1]
 sys.path.extend([str(ROOT/'src')])
-import configx
+import projectx
 
 if sys.platform == 'win32':
     import asyncio
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-project = 'configx'
+project = 'projectx'
 copyright = '2022, xinetzone'
 author = 'xinetzone'
 
 # The full version, including alpha/beta/rc tags
-release = configx.__version__
+release = projectx.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -144,7 +144,7 @@ intersphinx_mapping = {
 
 # ``pydata-sphinx-theme`` 配置
 # Define the json_url for our version switcher.
-json_url = 'https://xinetzone.github.io/configx/_static/switcher.json'
+json_url = 'https://xinetzone.github.io/projectx/_static/switcher.json'
 
 version = release
 
@@ -160,7 +160,7 @@ html_theme_options = {
         "json_url": json_url,
         "version_match": switcher_version
     },
-    "github_url": "https://github.com/xinetzone/configx",
+    "github_url": "https://github.com/xinetzone/projectx",
     "use_edit_page_button": True,
     "show_nav_level": 0,
     "show_toc_level": 0,
@@ -247,7 +247,7 @@ html_sidebars = {
 
 html_context = {
     "github_user": "xinetzone",
-    "github_repo": "configx",
+    "github_repo": "projectx",
     "github_version": "main",
     "doc_path": "doc",
 }
@@ -270,7 +270,7 @@ comments_config = {
     "hypothesis": True,
     "dokieli": False,
     "utterances": {
-        "repo": "xinetzone/configx",
+        "repo": "xinetzone/projectx",
         "optional": "config",
     }
 }
