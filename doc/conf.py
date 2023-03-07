@@ -14,18 +14,18 @@ from pathlib import Path
 
 ROOT = Path('__file__').resolve().parents[1]
 sys.path.extend([str(ROOT/'src')])
-import xbook
+import configx
 
 if sys.platform == 'win32':
     import asyncio
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-project = 'xbook'
+project = 'configx'
 copyright = '2022, xinetzone'
 author = 'xinetzone'
 
 # The full version, including alpha/beta/rc tags
-release = xbook.__version__
+release = configx.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -144,7 +144,7 @@ intersphinx_mapping = {
 
 # ``pydata-sphinx-theme`` 配置
 # Define the json_url for our version switcher.
-json_url = 'https://xinetzone.github.io/xbook/_static/switcher.json'
+json_url = 'https://xinetzone.github.io/configx/_static/switcher.json'
 
 version = release
 
@@ -160,7 +160,7 @@ html_theme_options = {
         "json_url": json_url,
         "version_match": switcher_version
     },
-    "github_url": "https://github.com/xinetzone/xbook",
+    "github_url": "https://github.com/xinetzone/configx",
     "use_edit_page_button": True,
     "show_nav_level": 0,
     "show_toc_level": 0,
@@ -170,8 +170,8 @@ html_theme_options = {
     "navbar_start": "navbar-logo.html",
     "navbar_center": "navbar-nav.html",
     "navbar_end": ["theme-switcher", "version-switcher", "navbar-icon-links"],
-    "left_sidebar_end": "sidebar-ethical-ads.html",
-    "page_sidebar_items": ["page-toc.html", "edit-this-page.html"],
+    # "left_sidebar_end": "sidebar-ethical-ads.html",
+    # "page_sidebar_items": ["page-toc.html", "edit-this-page.html"],
     # "page_sidebar_items": [], # 删除右侧边栏
     "footer_start": ["copyright", "sphinx-version"],
     "footer_end": ["last-updated", ],
@@ -247,7 +247,7 @@ html_sidebars = {
 
 html_context = {
     "github_user": "xinetzone",
-    "github_repo": "xbook",
+    "github_repo": "configx",
     "github_version": "main",
     "doc_path": "doc",
 }
@@ -270,7 +270,7 @@ comments_config = {
     "hypothesis": True,
     "dokieli": False,
     "utterances": {
-        "repo": "xinetzone/xbook",
+        "repo": "xinetzone/configx",
         "optional": "config",
     }
 }

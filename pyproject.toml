@@ -6,7 +6,7 @@ requires = ["flit_core >=3.4,<4"]
 authors = [{name = "xinetzone", email = "735613050@qq.com"}]
 dynamic = ["version", "description"]
 license = {file = "LICENSE"}
-name = "xbook"
+name = "configx"
 readme = "README.md"
 requires-python = ">=3.10"
 
@@ -30,7 +30,7 @@ classifiers = [
 ]
 
 [project.urls]
-Home = "https://github.com/xinetzone/xbook"
+Home = "https://github.com/xinetzone/configx"
 
 [project.optional-dependencies]
 doc = [
@@ -49,7 +49,7 @@ coverage = [
   "pytest-cov",
   "pytest-regressions",
   "codecov",
-  "xbook[test]",
+  "configx[test]",
 ]
 dev = [
   "pyyaml",
@@ -58,11 +58,11 @@ dev = [
 ]
 test = [
   "pytest",
-  "xbook[doc]",
+  "configx[doc]",
 ]
 
 [project.entry-points]
-"sphinx.html_themes" = {xbook = "xbook"}
+"sphinx.html_themes" = {configx = "configx"}
 
 [tool.flit.sdist]
 # include = ["docs/"]
