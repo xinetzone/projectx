@@ -153,7 +153,7 @@ if "dev" in version:
     switcher_version = "dev"
 elif "rc" in version:
     switcher_version = version.split("rc")[0] + " (rc)"
-
+html_baseurl = "https://xinetzone.github.io/projectx"
 autosummary_generate = True
 html_theme_options = {
     "switcher": {
