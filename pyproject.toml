@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 
 dependencies = [
   "d2py",
-  "attrs",
+  "toml",
   "importlib-metadata>=4.12"
 ]
 
