@@ -34,7 +34,7 @@
 [install-badge]: https://img.shields.io/pypi/dw/projectx?label=pypi%20installs
 [install-link]: https://pypistats.org/packages/projectx
 [status-badge]: https://readthedocs.org/projects/projectz/badge/?version=latest
-[status-link]: https://projectz.readthedocs.io/zh/latest/?badge=latest
+[status-link]: https://projectz.readthedocs.io/zh_CN/latest/?badge=latest
 [download-badge]: https://pepy.tech/badge/projectx
 [download-link]: https://pepy.tech/project/projectx
 
