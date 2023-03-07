@@ -33,8 +33,8 @@
 [binder-link]: https://mybinder.org/v2/gh/xinetzone/projectx/main
 [install-badge]: https://img.shields.io/pypi/dw/projectx?label=pypi%20installs
 [install-link]: https://pypistats.org/packages/projectx
-[status-badge]: https://readthedocs.org/projects/projectx/badge/?version=latest
-[status-link]: https://projectx.readthedocs.io/zh/latest/?badge=latest
+[status-badge]: https://readthedocs.org/projects/projectz/badge/?version=latest
+[status-link]: https://projectz.readthedocs.io/zh/latest/?badge=latest
 [download-badge]: https://pepy.tech/badge/projectx
 [download-link]: https://pepy.tech/project/projectx
 
